@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.expensemanage.MainActivity"
+    android:orientation="vertical"
+    android:id="@+id/container"
+    android:background="@drawable/login_bg"
+    android:gravity="center_horizontal">
+
+    <TextView
+
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:text="Expense Tracker\nLogin"
+        android:textStyle="italic"
+        android:textColor="#060823"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:paddingVertical="30dp"
+        android:fontFamily="sans-serif-light"
+        android:layout_gravity="center_horizontal" />
+
+
+    <!--<ImageView
+    //android:background="@drawable/rectangle_drawable"
+        android:layout_width="wrap_content"
+        android:background="#04ea00"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/logo"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/edittext_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="30dp"
+            android:drawableLeft="@drawable/username1"
+            android:hint="@string/username"
+            android:paddingLeft="20dp"
+            android:textColor="#FF000000"
+            android:textColorHint="#FF000000" />
+
+
+        <EditText
+            android:id="@+id/edittext_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:drawableLeft="@drawable/password1"
+            android:hint="@string/password"
+            android:paddingLeft="20dp"
+            android:textColor="#FF000000"
+            android:textColorHint="#FF000000" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_bg"
+        android:text="@string/login"
+        android:textColor="#ffffff"
+        app:backgroundTint="#060823" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:textColor="#FF000000"
+            android:text="@string/not_registered"/>
+
+        <TextView
+            android:id="@+id/textview_register"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+
+            android:textColor="#060823"
+            android:text="@string/register"/>
+
+    </LinearLayout>
+</LinearLayout>

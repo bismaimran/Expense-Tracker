@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.example.expensemanage.RegisterActivity">
+
+    <!--    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginTop="50dp"
+            app:srcCompat="@drawable/logo"/>-->
+    <TextView
+
+
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:text="Expense Tracker\nRegistration"
+        android:textColor="#060823"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:textSize="30dp"
+        android:paddingVertical="25dp"
+        android:fontFamily="sans-serif-light"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/edittext_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="30dp"
+        android:paddingLeft="20dp"
+        android:drawableLeft="@drawable/username1"
+        android:hint="@string/username"
+        android:textColor="#FF000000"
+        android:textColorHint="#FF000000"/>
+
+    <EditText
+        android:id="@+id/edittext_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="30dp"
+        android:paddingLeft="20dp"
+        android:drawableLeft="@drawable/password1"
+        android:hint="@string/password"
+        android:textColor="#FF000000"
+        android:textColorHint="#FF000000" />
+
+    <EditText
+        android:id="@+id/edittext_cnf_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="30dp"
+        android:drawableLeft="@drawable/password1"
+        android:hint="@string/confirm_password"
+        android:textColor="#FF000000"
+        android:textColorHint="#FF000000"/>
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_bg"
+        android:text="@string/register"
+        android:textColor="#ffffff"
+        app:backgroundTint="#060A23" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:textColor="#060A23"
+            android:text="@string/already_registered"/>
+
+        <TextView
+            android:id="@+id/textview_login"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:textColor="#060A23"
+            android:textSize="16sp"
+            android:text="@string/login"/>
+
+    </LinearLayout>
+
+</LinearLayout>
